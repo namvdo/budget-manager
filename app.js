@@ -154,15 +154,16 @@ var UIController = (function () {
       // create HTML with placeholder text
       if (type === "inc") {
         element = domStrings.incomeContainer;
-        html = `<div class="item clearfix" id="inc-%id%">
-        <div class="item__description">%description%</div>
-        <div class="right clearfix">
+        html = `
+            <div class="item clearfix" id="inc-%id%">
+            <div class="item__description">%description%</div>
+            <div class="right clearfix">
             <div class="item__value">%value%</div>
             <div class="item__delete">
                 <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
             </div>
-        </div>
-        </div>`;
+            </div>
+            </div>`;
       } else if (type === "exp") {
         element = domStrings.expenseContainer;
         html = `<div class="item clearfix" id="exp-%id%">
